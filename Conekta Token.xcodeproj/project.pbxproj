@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		80EC11551C44136D001BE318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC11541C44136D001BE318 /* main.m */; };
 		80EC11581C44136D001BE318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC11571C44136D001BE318 /* AppDelegate.m */; };
-		80EC115B1C44136D001BE318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC115A1C44136D001BE318 /* ViewController.m */; };
+		80EC115B1C44136D001BE318 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 80EC115A1C44136D001BE318 /* Start.m */; };
 		80EC115E1C44136D001BE318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80EC115C1C44136D001BE318 /* Main.storyboard */; };
 		80EC11611C44136D001BE318 /* Conekta_Token.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80EC115F1C44136D001BE318 /* Conekta_Token.xcdatamodeld */; };
 		80EC11631C44136D001BE318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80EC11621C44136D001BE318 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		80EC11541C44136D001BE318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80EC11561C44136D001BE318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80EC11571C44136D001BE318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		80EC11591C44136D001BE318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		80EC115A1C44136D001BE318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		80EC11591C44136D001BE318 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		80EC115A1C44136D001BE318 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		80EC115D1C44136D001BE318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80EC11601C44136D001BE318 /* Conekta_Token.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Conekta_Token.xcdatamodel; sourceTree = "<group>"; };
 		80EC11621C44136D001BE318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		80EC11521C44136D001BE318 /* Conekta Token */ = {
 			isa = PBXGroup;
 			children = (
-				80EC11561C44136D001BE318 /* AppDelegate.h */,
-				80EC11571C44136D001BE318 /* AppDelegate.m */,
-				80EC11591C44136D001BE318 /* ViewController.h */,
-				80EC115A1C44136D001BE318 /* ViewController.m */,
+				80EC116D1C441437001BE318 /* Main */,
+				80EC116E1C441440001BE318 /* Controller */,
 				80EC115C1C44136D001BE318 /* Main.storyboard */,
 				80EC11621C44136D001BE318 /* Assets.xcassets */,
 				80EC11641C44136E001BE318 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				80EC11541C44136D001BE318 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80EC116D1C441437001BE318 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80EC11561C44136D001BE318 /* AppDelegate.h */,
+				80EC11571C44136D001BE318 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		80EC116E1C441440001BE318 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80EC11591C44136D001BE318 /* Start.h */,
+				80EC115A1C44136D001BE318 /* Start.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80EC115B1C44136D001BE318 /* ViewController.m in Sources */,
+				80EC115B1C44136D001BE318 /* Start.m in Sources */,
 				80EC11581C44136D001BE318 /* AppDelegate.m in Sources */,
 				80EC11551C44136D001BE318 /* main.m in Sources */,
 				80EC11611C44136D001BE318 /* Conekta_Token.xcdatamodeld in Sources */,
@@ -266,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Conekta Token/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fzagato.Conekta-Token";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Conekta Token/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fzagato.Conekta-Token";
 				PRODUCT_NAME = "$(TARGET_NAME)";
